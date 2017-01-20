@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <style>
+        p{
+            border: 2px solid red;
+            height: 40px;
+            width: 120px;
+            line-height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <p></p>
+    <input type="button" value="Click" onclick="launch()">
+<script>
+    
+    
+    function random(N,M){
+    return Math.ceil(Math.random()*(M-N)+N);
+    }
+    
+    function launch(){
+        var num=random(1911,2017);
+        console.log(num);
+        d3.select("p").text(num);
+    }
+    
+    </script>
+    <br>
+    <br>
+    <br>
+    
+    <hr>
+
+   
+
+                           
+
+</body>
+</html>
